@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Vazirmatn, sans-serif;
+            direction: rtl;
+        }
+        .fav-category-parent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid red;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .fav-category {
+            background-color: rgba(0, 173, 182,0.1);
+            display: flex;
+            width: calc(50% - 20px);
+            max-width: 500px;
+            padding: 24px 16px;
+        }
+        @media screen and ( max-width : 600px) {
+            .fav-category {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .fav-category__logo-container {
+            background-color: white;
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .fav-category__logo-img {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+        .fav-category__description {
+            padding-right: 15px;
+        }
+        .fav-category__title {
+            text-decoration: none;
+            color: rgb(0, 173, 182);
+            font-size: 15px;
+            font-weight: 600;
+        } 
+        .fav-category__description h2 {
+            margin-bottom: 4px;
+        }
+        .fav-category__details {
+            color: rgb(77, 88, 104);
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fav-category-parent">
+        <div class="fav-category">
+            <div class="fav-category__logo-container">
+                <img src="assets/img/cat2.png" alt="" class="fav-category__logo-img">
+            </div>
+            <div class="fav-category__description">
+                <h2>
+                    <a href="#" class="fav-category__title">آموزش گوگل ارث</a>
+                </h2>
+                <div class="fav-category__details">
+                    <i class="fa fa-television" aria-hidden="true"></i>
+                    <span>1 دوره آموزشی</span>
+                </div>
+            </div>
+        </div>
+        <div class="fav-category">
+            <div class="fav-category__logo-container">
+                <img src="assets/img/cat2.png" alt="" class="fav-category__logo-img">
+            </div>
+            <div class="fav-category__description">
+                <h2>
+                    <a href="#" class="fav-category__title">آموزش گوگل ارث</a>
+                </h2>
+                <div class="fav-category__details">
+                    <i class="fa fa-television" aria-hidden="true"></i>
+                    <span>1 دوره آموزشی</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

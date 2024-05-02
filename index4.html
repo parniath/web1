@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes loading {
+            0% {top: 0;}
+            50% {background-color:rgba(255, 255, 255, 0);opacity: 0;top: 0;}
+            100% {background-color:rgba(255, 255, 255, 0);top: 100%;}
+        }
+        .loading-container {
+            background-color: gray;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes rotate-loading {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+        .loading-container img {
+            width: 50px;
+            height: 50px;
+            animation-name: rotate-loading;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: linear; */
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div>
+            <img src="assets/img/simple-loading-or-buffering-icon-design-png.webp" alt="">
+            <p>loding ... </p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
